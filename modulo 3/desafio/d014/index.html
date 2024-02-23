@@ -13,18 +13,22 @@
             border: 1px solid black;
             padding: 10px;
         }
+        tr.cabecalho{
+            background-color: indianred;
+            color: white;
+        }
     </style>
 </head>
 <body>
     <table>
         <theade>
-            <tr>
+            <tr class="cabecalho">
                 <th rowspan="2" scope="col">Área</th>
                 <th rowspan="2" scope="col">Disciplinas</th>
                 <th colspan="2" scope="colgroup">Notas</th>
                 <th rowspan="2" scope="col">Média</th>
             </tr>
-            <tr>
+            <tr class="cabecalho">
                 <th scope="col">Nota 1</th>
                 <th scope="col">Nota 2</th>
             </tr>
@@ -57,8 +61,8 @@
                 <td>0.0</td>
                 <td>0.0</td>
             </tr>
-            <tr>
-                <td colspan="4">Média de Exatas</td>
+            <tr class="cabecalho">
+                <th colspan="4" scope="row">Média de Exatas</td>
                 <td>0.0</td>
             </tr>
             <!--Humanas-->
@@ -75,8 +79,8 @@
                 <td>0.0</td>
                 <td>0.0</td>
             </tr>
-            <tr>
-                <td colspan="4">Média de Humanas</td>
+            <tr class="cabecalho">
+                <th colspan="4" scope="row" >Média de Humanas</td>
                 <td>0.0</td>
             </tr>
         </tbody>
